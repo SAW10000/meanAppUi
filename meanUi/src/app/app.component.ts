@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './common/header/header.component';
+import { FooterComponent } from './common/footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  imports: [RouterOutlet, HeaderComponent, FooterComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppComponent {
   title = 'meanUi';
