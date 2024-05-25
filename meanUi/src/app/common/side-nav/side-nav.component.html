@@ -1,12 +1,14 @@
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="over">
-    <p>Auto-resizing sidenav</p>
-    @if (showFiller) {
-      <p>Lorem, ipsum dolor sit amet consectetur.</p>
-    }
-    <button (click)="showFiller = !showFiller" mat-raised-button>
-      Toggle extra text
-    </button>
+
+    <div class="menu-content">
+      @for( item of menu; track item){
+        <button mat-fab extended color="primary">
+          <mat-icon>{{item.menu_icon}}</mat-icon>
+          {{item.menu_name | titlecase}}
+        </button>
+      }
+    </div>
   </mat-drawer>
 
 </mat-drawer-container>

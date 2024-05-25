@@ -14,7 +14,7 @@ import { SideNavComponent } from '../side-nav/side-nav.component';
 })
 export class HeaderComponent {
 flag=false;
-  openSideNav(flag:boolean) {
+  openSideNav(flag:boolean):void {
     this.flag=flag;
   }
 }
