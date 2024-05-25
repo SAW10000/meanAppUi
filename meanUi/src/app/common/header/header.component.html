@@ -1,3 +1,15 @@
-<mat-card>
-  <mat-card-content>Header</mat-card-content>
-</mat-card>
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="openSideNav(!flag)">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Kartikkumar Saw</span>
+  <span class="header-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
+<app-side-nav [openSideNav]="flag"></app-side-nav>
+
