@@ -1,0 +1,14 @@
+.card {
+  max-width: 400px;
+  display: flex;
+  img{
+    align-self: center;
+    width: 300px;
+  }
+position: sticky;
+}
+
+.header-image {
+  background-image: url('/assets/0118kartik.jpg');
+  background-size: cover;
+}

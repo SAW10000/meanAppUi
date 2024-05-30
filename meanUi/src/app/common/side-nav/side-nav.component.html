@@ -3,12 +3,12 @@
 
     <div class="menu-content">
       @for( item of menu; track item){
-        <button mat-fab extended color="primary">
+        <button mat-fab extended color="primary" (click)="sideNavClose()">
           <mat-icon>{{item.menu_icon}}</mat-icon>
-          {{item.menu_name | titlecase}}
+          <a [routerLink]="[item.path]" > {{item.menu_name | titlecase}}</a>
         </button>
       }
     </div>
   </mat-drawer>
-
+  <router-outlet />
 </mat-drawer-container>

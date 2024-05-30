@@ -1,6 +1,5 @@
 .example-container {
   width: auto;
-  height: -webkit-fill-available;
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
@@ -16,6 +15,7 @@
 }
 
 .menu-content{
+  // width: fit-content;
   display: flex;
   flex-direction: column;
   padding:12px;
@@ -24,4 +24,9 @@
     width: -webkit-fill-available;
     justify-content: left;
   }
+}
+
+::ng-deep .mat-drawer-content{
+  margin:12px 96px;
+  border:2px solid green;
 }
