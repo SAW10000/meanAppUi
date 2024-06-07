@@ -26,7 +26,8 @@ export class SideNavComponent implements OnChanges {
       path:'personal_information',menu_name: 'personal information',
       menu_icon: 'settings_heart',
     },
-    { path:'contact',menu_name: 'contact', menu_icon: 'contact_page' }
+    { path:'contact',menu_name: 'contact', menu_icon: 'contact_page' },
+    { path:'map',menu_name: 'map', menu_icon: 'map' }
   ];
 
   sideNavClose() {
